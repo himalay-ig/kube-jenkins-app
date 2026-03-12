@@ -4,7 +4,7 @@ pipeline{
         stage("clone"){
             steps{
             retry(3){
-               bat "git clone https://github.com/himalay-ig/kube-jenkins-app.git"
+                git "https://github.com/himalay-ig/kube-jenkins-app.git"
                }
             }
         }
