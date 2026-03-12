@@ -1,5 +1,10 @@
 pipeline{
     agent any
+    
+tools {
+        jdk 'zulu-25'
+    }
+
     stages{
         stage("clone"){
             steps{
